@@ -1,7 +1,5 @@
-
 const map = L.map ("singaporeMap");
 map.setView ([1.3521,103.8198], 13);
-
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
 // let court1 = L.marker ([1.3493592234373146, 103.85135136162316]);
@@ -26,7 +24,6 @@ async function LoadProducts(map)
     //     L.marker(randomPosition).addTo(markerClusterLayer);
     // }
 }
-
 
 document.addEventListener("DOMContentLoaded", async function(){
     const weather = await getWeather();
@@ -194,6 +191,3 @@ document.addEventListener("DOMContentLoaded", async function(){
 // // group3.addTo(map)
 // }
 // group3.addTo(map)
-
-
-
